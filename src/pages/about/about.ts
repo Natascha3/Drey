@@ -9,11 +9,11 @@ import {ContactPage} from "../contact/contact";
 })
 export class AboutPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private viewCtrl: ViewController) {
 
   }
 
-  public addList(){
+   addList(){
     this.navCtrl.push(ContactPage);
   }
 }

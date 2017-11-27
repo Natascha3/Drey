@@ -44,7 +44,7 @@
 
   <ion-item>
     <ion-label stacked>Öffentich</ion-label>
-    <ion-toggle [(ngModel)]="myProperty" [checked]="myProperty"></ion-toggle>
+    <ion-toggle class="toggle-dark" [(ngModel)]="myProperty" [checked]="myProperty" color="dark"></ion-toggle>
   </ion-item>
 
   <ion-item *ngIf="myProperty===true">
@@ -58,9 +58,10 @@
   <ion-item *ngIf="myProperty===true">
     <ion-label stacked>Person</ion-label>
   <ion-select [(ngModel)]="person">
-    <ion-option value="f">Person1</ion-option>
-    <ion-option value="m">Person2</ion-option>
+    <ion-option value="1">Person1</ion-option>
+    <ion-option value="2">Person2</ion-option>
   </ion-select>
   </ion-item>
+
 
 </ion-content>

@@ -15,7 +15,7 @@ export class HomePage {
 
   }
 
-public pushPage(){
-  this.navCtrl.push(AboutPage);
-}
+  public pushPage(){
+    this.navCtrl.push(AboutPage);
+  }
 }

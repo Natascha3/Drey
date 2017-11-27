@@ -20,7 +20,7 @@ export class ContactPage {
       this.showOptions=false;
     }
   }
-  showOption(){
+  public showOption(){
     return this.showOptions;
   }
 }
