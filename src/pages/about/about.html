@@ -7,20 +7,22 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-slides pager>
+  <ion-list>
+    <button ion-item>
+      Test
+    </button>
+  </ion-list>
 
-    <ion-slide style="background-color: green">
-      <h2>Slide 1</h2>
-    </ion-slide>
 
-    <ion-slide style="background-color: blue">
-      <h2>Slide 2</h2>
-    </ion-slide>
+    <ion-item-group>
+      <ion-item-divider color="light">A</ion-item-divider>
+      <ion-item>Angola</ion-item>
+      <ion-item>Argentina</ion-item>
+    </ion-item-group>
 
-    <ion-slide style="background-color: red">
-      <h2>Slide 3</h2>
-    </ion-slide>
 
-  </ion-slides>
+  <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon ios="ios-add" md="md-add"></ion-icon></button>
+  </ion-fab>
 
 </ion-content>
