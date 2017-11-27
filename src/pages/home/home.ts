@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AboutPage} from "../about/about";
+import {ContactPage} from "../contact/contact";
 
 @Component({
   selector: 'page-home',
@@ -8,8 +9,13 @@ import { AboutPage} from "../about/about";
 })
 export class HomePage {
 
+
+
   constructor(public navCtrl: NavController) {
 
   }
 
+public pushPage(){
+  this.navCtrl.push(AboutPage);
+}
 }

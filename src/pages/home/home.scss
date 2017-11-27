@@ -1,4 +1,13 @@
 page-home {
+  font-family: 'Questrial', sans-serif;
+  .test{
+    background-image: url("http://static.giga.de/wp-content/uploads/2014/10/material-design-wallpaper_1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+  }
+
 .LogoSize{
   width: 150px;
   float: right;
@@ -9,12 +18,15 @@ page-home {
   }
   .LoginButton{
     width:100%;
+    background-color: #9eeeb6;
   }
   .titleLine{
     font-family: 'Gloria Hallelujah', cursive;
     margin-left: 30%;
     font-size: 50px;
   }
-
+.color{
+  box-shadow : 0px 6px 10px #888888;
+}
 
 }

@@ -1,10 +1,10 @@
-<ion-header>
+<ion-header class="color">
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title >Home</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="test">
   <h2>Wilkommen bei Drey!</h2>
   <img class="LogoSize" src="https://image.flaticon.com/icons/svg/166/166752.svg">
   <p>
@@ -23,6 +23,6 @@
 
     </ion-list>
 
-    <button class="LoginButton" ion-button color="light">Login</button>
+    <a><button class="LoginButton" (click)="pushPage()" ion-button >Login</button></a>
 
 </ion-content>
