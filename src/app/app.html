@@ -1,1 +1,15 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu side="right" [content]="mycontent">
+  <ion-content>
+    <ion-list-header class="menuHeader">
+      Menu
+    </ion-list-header>
+    <ion-list>
+
+      <a ion-item> Neus Liste erstellen </a>
+      <a ion-item> Deine Listen</a>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
+<a class="menuButton" ion-button menuToggle (click)="openMenu()"><ion-icon class="iconSize" ios="ios-menu" md="md-menu"></ion-icon></a>

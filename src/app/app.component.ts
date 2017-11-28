@@ -3,16 +3,21 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage} from "../pages/home/home";
+import { MenuController } from "ionic-angular";
+import { NewListPage } from "../pages/newList/newList";
+import{ ListOverviewPage } from "../pages/list-overview/list-overview";
 
 @Component({
+  selector: 'page-app',
   templateUrl: 'app.html'
 })
 export class MyApp {
   rootPage:any = HomePage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+
+
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public menuCtrl: MenuController) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -20,4 +25,8 @@ export class MyApp {
       splashScreen.hide();
     });
   }
+  openMenu() {
+    this.menuCtrl.open();
+  }
+
 }

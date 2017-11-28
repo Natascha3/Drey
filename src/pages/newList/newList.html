@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      New List
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="card-background-page">
+
+  <ion-item>
+    <ion-label stacked>Listenname:</ion-label>
+    <ion-input type="name"  [(ngModel)]="listname" name="listname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Datum</ion-label>
+    <ion-input type="date" [(ngModel)]="date" name="date"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Öffentich</ion-label>
+    <ion-toggle class="toggle-dark" [(ngModel)]="myProperty" [checked]="myProperty" color="dark"></ion-toggle>
+  </ion-item>
+
+  <ion-item *ngIf="myProperty===true">
+    <ion-label stacked>Gruppe</ion-label>
+    <ion-select [(ngModel)]="group">
+      <ion-option value="f">Gruppe1</ion-option>
+      <ion-option value="m">Gruppe2</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item *ngIf="myProperty===true">
+    <ion-label stacked>Person</ion-label>
+    <ion-select [(ngModel)]="person">
+      <ion-option value="1">Person1</ion-option>
+      <ion-option value="2">Person2</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <a><button class="SaveButton" (click)="saveList(listname,date)"  ion-button >Save</button></a>
+</ion-content>
+

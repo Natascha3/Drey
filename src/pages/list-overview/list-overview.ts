@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import {ContactPage} from "../contact/contact";
 import {NavParams} from "ionic-angular";
+import {List} from "./list";
+import {NewListPage} from "../newList/newList";
 
 @Component({
   selector: 'page-listOverview',
@@ -11,6 +12,7 @@ export class ListOverviewPage {
   list: string[];
   listName:string;
   listDate:any;
+  test= new List("","",null);
 
   constructor(public navCtrl: NavController, private navParams: NavParams) {
     this.listName= navParams.get('param1');
@@ -20,7 +22,7 @@ export class ListOverviewPage {
   }
 
   addList(){
-    this.navCtrl.push(ContactPage);
+    this.navCtrl.push(NewListPage);
   }
 
   newList(){

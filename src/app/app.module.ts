@@ -10,7 +10,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {ListOverviewPage} from "../pages/list-overview/list-overview";
+import { ListOverviewPage } from "../pages/list-overview/list-overview";
+import { NewListPage } from "../pages/newList/newList";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {ListOverviewPage} from "../pages/list-overview/list-overview";
     ContactPage,
     HomePage,
     TabsPage,
-    ListOverviewPage
+    ListOverviewPage,
+    NewListPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,9 @@ import {ListOverviewPage} from "../pages/list-overview/list-overview";
     ContactPage,
     HomePage,
     TabsPage,
-    ListOverviewPage
+    ListOverviewPage,
+    NewListPage
+
   ],
   providers: [
     StatusBar,
