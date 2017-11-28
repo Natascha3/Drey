@@ -1,12 +1,14 @@
 page-home {
   overflow:hidden;
   font-family: 'Questrial', sans-serif;
+
   .test{
-    background-image: url("http://www.miui.ch/inc/uploads/2016/02/MIn-2.png");
+    background-image: url("https://fsa.zobj.net/crop.php?r=gbghNAH6T75F2pWsY0R9o_Klw1-EzJxR5S1zVI1XPHPbOoOZrqO7a1bOJte7sKmjaVsnEjCcB5rtDHK0IS3O6Yxy5dtcOGMxzCEOo1C2FbMaldQ_EqGUJbQ3z2qU4jf4NI2H7yU-R7H44TPo6jshjYqRcTHlfSJEoJLBiw");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
+    color: #424242;
   }
 
 .LogoSize{
@@ -19,7 +21,8 @@ page-home {
   }
   .LoginButton{
     width:100%;
-    background-color: #D75C35;
+    background-color: #01DFD7;
+    color: #424242;
   }
   .titleLine{
     font-family: 'Gloria Hallelujah', cursive;

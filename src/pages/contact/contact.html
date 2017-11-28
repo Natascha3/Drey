@@ -34,12 +34,12 @@
 
   <ion-item>
     <ion-label stacked>Listenname:</ion-label>
-    <ion-input type="name"></ion-input>
+    <ion-input type="name"  [(ngModel)]="listname" name="listname"></ion-input>
   </ion-item>
 
     <ion-item>
     <ion-label stacked>Datum</ion-label>
-    <ion-input type="date"></ion-input>
+    <ion-input type="date" [(ngModel)]="date" name="date"></ion-input>
   </ion-item>
 
   <ion-item>
@@ -63,5 +63,6 @@
   </ion-select>
   </ion-item>
 
-
+  <a><button class="SaveButton" (click)="saveList(listname,date)"  ion-button >Save</button></a>
 </ion-content>
+

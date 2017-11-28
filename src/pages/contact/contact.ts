@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {ListOverviewPage} from "../list-overview/list-overview";
 
 @Component({
   selector: 'page-contact',
@@ -22,5 +23,10 @@ export class ContactPage {
   }
   public showOption(){
     return this.showOptions;
+  }
+
+  saveList(listName,date){
+    console.log(listName);
+    this.navCtrl.push(ListOverviewPage,{param1:listName, param2:date});
   }
 }
