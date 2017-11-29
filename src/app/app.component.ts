@@ -5,8 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage} from "../pages/home/home";
 import { MenuController } from "ionic-angular";
-import { NewListPage } from "../pages/newList/newList";
-import{ ListOverviewPage } from "../pages/list-overview/list-overview";
 
 @Component({
   selector: 'page-app',
