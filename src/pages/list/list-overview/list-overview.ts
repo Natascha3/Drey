@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NavParams } from "ionic-angular";
 import { List } from "./list";
-import { NewListPage } from "../newList/newList";
+import { NewListPage } from "./newList/newList";
 
 @Component({
   selector: 'page-listOverview',

@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage} from "../pages/home/home";
 import { MenuController } from "ionic-angular";
 
+
 @Component({
   selector: 'page-app',
   templateUrl: 'app.html'
@@ -26,5 +27,6 @@ export class MyApp {
   openMenu() {
     this.menuCtrl.open();
   }
+
 
 }
