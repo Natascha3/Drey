@@ -1,29 +1,32 @@
-<ion-header class="color">
-  <ion-navbar>
-    <ion-title >Home</ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content padding>
+  <h2 text-center>Willkommen bei Drey !</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/imgs/squirrel.svg">
+      </ion-col>
+      <ion-col>
+        <p style="margin-top: 40px;">Erstelle deine persönlichen <strong>Listen</strong> oder Teile sie mit deinen Freunden !</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <form>
+    <ion-list>
 
-<ion-content padding class="test">
-  <h2>Wilkommen bei Drey!</h2>
-  <img class="LogoSize" src="https://image.flaticon.com/icons/svg/166/166752.svg">
-  <p>
-    Erstelle deine persöhnlichen Listen oder Teile sie mit deinen Freunden!
-  </p>
-
-    <ion-list class="login">
-
-      <ion-item >
-        <ion-input onclick="keyboardCheck()" type="text"  placeholder="Username"></ion-input>
+      <ion-item>
+        <ion-label floating>Benutzername</ion-label>
+        <ion-input type="text" name="username"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-input type="password" placeholder="Password"></ion-input>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" name="password"></ion-input>
       </ion-item>
 
+      <div padding>
+        <button ion-button color="primary" block outline>Anmelden</button>
+      </div>
+
     </ion-list>
-
-    <a><button class="LoginButton" ion-button >Login</button></a>
-
-
+  </form>
 </ion-content>

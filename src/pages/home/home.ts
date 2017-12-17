@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {ListOverviewPage} from "../list/list-overview/list-overview";
-import {Keyboard} from "@ionic-native/keyboard";
 
 @Component({
   selector: 'page-home',
@@ -9,14 +8,9 @@ import {Keyboard} from "@ionic-native/keyboard";
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public keyboard: Keyboard) {}
+  constructor(public navCtrl: NavController) {}
 
    pushPage() {
      this.navCtrl.push(ListOverviewPage);
-
    }
-  keyboardCheck() {
-    console.log("test");
-    this.keyboard.show();
-  }
 }

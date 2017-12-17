@@ -12,9 +12,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ListOverviewPage } from "../pages/list/list-overview/list-overview";
 import { NewListPage } from "../pages/list/list-overview/newList/newList";
-import {MenuPage} from "../pages/menu/menu";
-import {ProfilePage} from "../pages/profile/profile";
-import {Keyboard} from "@ionic-native/keyboard";
+import { MenuPage } from "../pages/menu/menu";
+import { ProfilePage } from "../pages/profile/profile";
+import { LoginPage } from '../pages/login/login';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import {Keyboard} from "@ionic-native/keyboard";
     ListOverviewPage,
     NewListPage,
     MenuPage,
-    ProfilePage
+    ProfilePage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -46,8 +47,7 @@ import {Keyboard} from "@ionic-native/keyboard";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Keyboard
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}

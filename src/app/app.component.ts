@@ -24,9 +24,5 @@ export class MyApp {
       splashScreen.hide();
     });
   }
-  openMenu() {
-    this.menuCtrl.open();
-  }
-
 
 }

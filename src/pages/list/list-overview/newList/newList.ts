@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import {ListOverviewPage} from "../list-overview";
+//import { NavController } from 'ionic-angular';
+//import { ListOverviewPage } from '../list-overview';
 
 @Component({
   selector: 'page-newList',
@@ -9,24 +9,25 @@ import {ListOverviewPage} from "../list-overview";
 export class NewListPage {
   showOptions=false;
 
-  constructor(public navCtrl: NavController) {
+  //public navCtrl: NavController
+  constructor() {
 
   }
 
   public release(success){
-    if(success=true){
-      this.showOptions=true;
-    }
-    else{
-      this.showOptions=false;
-    }
+    //if(success=true){
+    //  this.showOptions=true;
+    //}
+    //else{
+    //  this.showOptions=false;
+    //}
   }
   public showOption(){
-    return this.showOptions;
+    //return this.showOptions;
   }
 
   saveList(listName,date){
     console.log(listName);
-    this.navCtrl.push(ListOverviewPage,{param1:listName, param2:date});
+    //this.navCtrl.push(ListOverviewPage,{param1:listName, param2:date});
   }
 }
