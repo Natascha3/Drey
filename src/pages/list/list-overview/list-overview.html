@@ -1,23 +1,25 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-     Lists
+      Lists
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="background">
-  <ion-list *ngIf=" listName!=null">
-    <button ion-item class="titelColor">
-      {{newList()}}
-      {{newDate()}} <ion-icon ios="ios-create" md="md-create"></ion-icon>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+      {{ item }}
     </button>
   </ion-list>
-
-
+  <!--<ion-list *ngIf=" listName!=null">-->
+    <!--<button ion-item class="titelColor">-->
+      <!--{{newList()}}-->
+      <!--{{newDate()}} <ion-icon ios="ios-create" md="md-create"></ion-icon>-->
+    <!--</button>-->
+  <!--</ion-list>-->
 
   <ion-fab right bottom>
     <button ion-fab color="light" (click)="addList()"> <ion-icon ios="ios-add" md="md-add"></ion-icon> </button>
   </ion-fab>
-
 </ion-content>
