@@ -1,0 +1,32 @@
+<ion-content padding>
+  <h2 text-center>Willkommen bei Drey !</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="assets/imgs/squirrel.svg">
+      </ion-col>
+      <ion-col>
+        <p style="margin-top: 40px;">Erstelle deine persönlichen <strong>Listen</strong> oder Teile sie mit deinen Freunden !</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <form (submit)="pushPage()">
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>Benutzername</ion-label>
+        <ion-input type="text" name="username"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" name="password"></ion-input>
+      </ion-item>
+
+      <div padding>
+        <button ion-button color="primary" block outline >Anmelden</button>
+      </div>
+    </ion-list>
+  </form>
+  <button ion-button clear>Registrieren</button>
+</ion-content>

@@ -41,8 +41,8 @@ import { LoginPage } from '../pages/login/login';
     ListOverviewPage,
     NewListPage,
     MenuPage,
-    ProfilePage
-
+    ProfilePage,
+    LoginPage
   ],
   providers: [
     StatusBar,

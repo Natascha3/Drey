@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-//import { NavController, NavParams } from 'ionic-angular';
+import { ListOverviewPage } from '../list/list-overview/list-overview';
+import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-login',
@@ -7,12 +8,11 @@ import { Component } from '@angular/core';
 })
 export class LoginPage {
 
-  //public navCtrl: NavController, public navParams: NavParams
-  constructor() {
+  // public navParams: NavParams
+  constructor(public navCtrl: NavController) {
   }
 
-  //ionViewDidLoad() {
-  //  console.log('ionViewDidLoad LoginPage');
-  //}
-
+  pushPage() {
+    this.navCtrl.push(ListOverviewPage);
+  }
 }

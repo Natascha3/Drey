@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import {ListOverviewPage} from "../list/list-overview/list-overview";
 
 @Component({
   selector: 'page-home',
@@ -8,9 +6,7 @@ import {ListOverviewPage} from "../list/list-overview/list-overview";
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {}
+  constructor() {}
 
-   pushPage() {
-     this.navCtrl.push(ListOverviewPage);
-   }
+
 }
