@@ -12,7 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ListOverviewPage } from "../pages/list/list-overview/list-overview";
 import { NewListPage } from "../pages/list/list-overview/newList/newList";
-import { MenuPage } from "../pages/menu/menu";
+
 import { ProfilePage } from "../pages/profile/profile";
 import { LoginPage } from '../pages/login/login';
 
@@ -24,13 +24,19 @@ import { LoginPage } from '../pages/login/login';
     HomePage,
     ListOverviewPage,
     NewListPage,
-    MenuPage,
     ProfilePage,
     LoginPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,{
+      menuType: 'push',
+      platforms: {
+        ios: {
+          menuType: 'overlay',
+        }
+      }
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -40,7 +46,6 @@ import { LoginPage } from '../pages/login/login';
     HomePage,
     ListOverviewPage,
     NewListPage,
-    MenuPage,
     ProfilePage,
     LoginPage
   ],

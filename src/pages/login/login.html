@@ -10,25 +10,30 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-  <form (submit)="pushPage()">
+
+  <form (submit)="pushPage(username,password)">
     <ion-list>
 
       <ion-item>
         <ion-label floating>Benutzername</ion-label>
-        <ion-input type="text" name="username"></ion-input>
+        <ion-input type="text" name="username" [ngModel]="username"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>Password</ion-label>
-        <ion-input type="password" name="password"></ion-input>
+        <ion-label floating> Password</ion-label>
+        <ion-input  type="password" name="password" [ngModel]="password"></ion-input>
       </ion-item>
 
       <div padding>
-        <button ion-button color="primary" block outline >Anmelden</button>
+        <button ion-button color="primary" block outline> Anmelden</button>
       </div>
+
     </ion-list>
+
   </form>
+
   <div padding>
     <button ion-button clear block>Registrieren</button>
   </div>
+
 </ion-content>

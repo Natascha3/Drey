@@ -27,18 +27,18 @@
         <icon density="xhdpi" src="resources/icon.png" />
         <icon density="xxhdpi" src="resources/icon.png" />
         <icon density="xxxhdpi" src="resources/icon.png" />
-        <splash density="land-ldpi" src="resources/icon.png" />
-        <splash density="land-mdpi" src="resources/icon.png" />
-        <splash density="land-hdpi" src="resources/icon.png" />
-        <splash density="land-xhdpi" src="resources/icon.png" />
-        <splash density="land-xxhdpi" src="resources/icon.png" />
-        <splash density="land-xxxhdpi" src="resources/icon.png" />
-        <splash density="port-ldpi" src="resources/icon.png" />
-        <splash density="port-mdpi" src="resources/icon.png" />
-        <splash density="port-hdpi" src="resources/icon.png" />
-        <splash density="port-xhdpi" src="resources/icon.png" />
-        <splash density="port-xxhdpi" src="resources/icon.png" />
-        <splash density="port-xxxhdpi" src="resources/icon.png" />
+        <splash density="land-ldpi" src="resources/squirrel1.png" />
+        <splash density="land-mdpi" src="resources/squirrel1.png" />
+        <splash density="land-hdpi" src="resources/squirrel1.png" />
+        <splash density="land-xhdpi" src="resources/squirrel1.png" />
+        <splash density="land-xxhdpi" src="resources/squirrel1.png" />
+        <splash density="land-xxxhdpi" src="resources/squirrel1.png" />
+        <splash density="port-ldpi" src="resources/squirrel1.png" />
+        <splash density="port-mdpi" src="resources/squirrel1.png" />
+        <splash density="port-hdpi" src="resources/squirrel1.png" />
+        <splash density="port-xhdpi" src="resources/squirrel1.png" />
+        <splash density="port-xxhdpi" src="resources/squirrel1.png" />
+        <splash density="port-xxxhdpi" src="resources/squirrel1.png" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
