@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ListOverviewPage } from '../list/list-overview/list-overview';
 import { NavController } from 'ionic-angular';
+import {HomePage} from "../home/home";
 
 @Component({
   selector: 'page-login',
@@ -9,21 +10,14 @@ import { NavController } from 'ionic-angular';
 export class LoginPage {
 
   // public navParams: NavParams
-  public username:string;
-  public password:string;
+   username:string="";
+   password:string="";
   constructor(public navCtrl: NavController) {
   }
 
-  pushPage(username,password ) {
-    this.username=username;
-    this.password=password;
-    console.log(username+password);
-    if(this.username=="admin" && this.password=="test2017"){
-      this.navCtrl.push(ListOverviewPage);
-    }
-    else{
-      alert("Fehler!")
-    }
+  pushPage( ) {
+      this.navCtrl.push(HomePage);
+
 
   }
 }

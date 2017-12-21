@@ -1,15 +1,15 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Lists
+      Deine Listen!
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="background">
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-      {{ item }}
+    <button ion-item *ngFor="let item of items" (click)="showDetail(item)">
+      {{ item.title}}
     </button>
   </ion-list>
   <!--<ion-list *ngIf=" listName!=null">-->

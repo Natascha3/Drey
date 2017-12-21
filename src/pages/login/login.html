@@ -11,7 +11,7 @@
     </ion-row>
   </ion-grid>
 
-  <form (submit)="pushPage(username,password)">
+  <form>
     <ion-list>
 
       <ion-item>
@@ -21,11 +21,11 @@
 
       <ion-item>
         <ion-label floating> Password</ion-label>
-        <ion-input  type="password" name="password" [ngModel]="password"></ion-input>
+        <ion-input  type="password" name="password" [ngModel]="password" ></ion-input>
       </ion-item>
 
       <div padding>
-        <button ion-button color="primary" block outline> Anmelden</button>
+        <button ion-button color="primary" block outline (click)="pushPage()"> Anmelden</button>
       </div>
 
     </ion-list>

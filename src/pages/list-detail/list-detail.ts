@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NavParams} from "ionic-angular";
 
 @Component({
   selector: 'page-list-detail',
@@ -6,6 +7,19 @@ import { Component } from '@angular/core';
 })
 export class ListDetailPage {
 
-  constructor() {}
+  item:any;
+  points:any;
+
+  constructor(public navParams:NavParams) {
+    this.item= this.navParams.get('item');
+    console.log(this.item);
+
+    this.getPoints();
+  }
+
+  getPoints(){
+    this.points = this.item.points;
+  }
+
 
 }

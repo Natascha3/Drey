@@ -15,6 +15,9 @@ import { NewListPage } from "../pages/list/list-overview/newList/newList";
 
 import { ProfilePage } from "../pages/profile/profile";
 import { LoginPage } from '../pages/login/login';
+import { ListProvider } from '../providers/list/list';
+import { HttpClientModule } from '@angular/common/http';
+import {ListDetailPage} from "../pages/list-detail/list-detail";
 
 @NgModule({
   declarations: [
@@ -25,9 +28,11 @@ import { LoginPage } from '../pages/login/login';
     ListOverviewPage,
     NewListPage,
     ProfilePage,
-    LoginPage
+    LoginPage,
+    ListDetailPage
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     IonicModule.forRoot(MyApp,{
       menuType: 'push',
@@ -47,12 +52,14 @@ import { LoginPage } from '../pages/login/login';
     ListOverviewPage,
     NewListPage,
     ProfilePage,
-    LoginPage
+    LoginPage,
+    ListDetailPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ListProvider
   ]
 })
 export class AppModule {}

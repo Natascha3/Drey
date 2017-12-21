@@ -1,6 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter, Input} from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NewListPage } from './newList/newList';
+import {ListProvider} from "../../../providers/list/list";
+import {NavParams} from "ionic-angular";
+import {ListDetailPage} from "../../list-detail/list-detail";
 
 @Component({
   selector: 'page-listOverview',
@@ -8,35 +11,28 @@ import { NewListPage } from './newList/newList';
 })
 export class ListOverviewPage {
 
-  items = [
-    'Pokémon Yellow',
-    'Super Metroid',
-    'Mega Man X',
-    'The Legend of Zelda',
-    'Pac-Man',
-    'Super Mario World',
-    'Street Fighter II',
-    'Half Life',
-    'Final Fantasy VII',
-    'Star Fox',
-    'Tetris',
-    'Donkey Kong III',
-    'GoldenEye 007',
-    'Doom',
-    'Fallout',
-    'GTA',
-    'Halo'
-  ];
+  items: any;
 
-  constructor(public navCtrl: NavController) {
-  }
-
-  itemSelected(item) {
-    console.log(item);
+  constructor(public navCtrl: NavController, private listProvider:ListProvider, public navParams: NavParams) {
+    this.getList();
   }
 
   addList() {
     this.navCtrl.push(NewListPage);
+  }
+
+
+  getList() {
+    this.listProvider.getList()
+      .then(data => {
+        this.items = data;
+        console.log(this.items);
+      });
+  }
+
+  showDetail(item) {
+    this.navCtrl.push(ListDetailPage,{item});
+    console.log(item);
   }
 }
 
