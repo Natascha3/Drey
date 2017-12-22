@@ -13,9 +13,8 @@
 
       <ion-col>
         <ion-card>
-          <img src="http://farm9.staticflickr.com/8155/6956457270_551e6e6357_b_d.jpg"/>
-          <div class="card-title">São Paulo</div>
-          <div class="card-subtitle">41 Listings</div>
+          <img src="../../../resources/squirrelf.png"/>
+          <div class="card-title">Willkommen!</div>
         </ion-card>
       </ion-col>
 
@@ -23,43 +22,67 @@
 
     <ion-row>
 
-      <ion-col>
-        <ion-card>
-          <ion-icon ios="ios-clock" md="md-clock"></ion-icon>
-          <div class="card-title">São Paulo</div>
-          <div class="card-subtitle">41 Listings</div>
+      <ion-col class="margin">
+        <a (click)="pushToProfil()">
+        <ion-card >
+          <ion-icon class="iconSize" ios="ios-color-wand" md="md-color-wand"></ion-icon>
+          <div class="card-title">Mein Profil</div>
         </ion-card>
+        </a>
       </ion-col>
 
-      <ion-col>
+      <ion-col class="margin">
+        <a (click)="pushToLists()">
         <ion-card>
-          <img src="http://farm9.staticflickr.com/8155/6956457270_551e6e6357_b_d.jpg"/>
-          <div class="card-title">São Paulo</div>
-          <div class="card-subtitle">41 Listings</div>
+          <ion-icon class="iconSize" ios="ios-list" md="md-list"></ion-icon>
+          <div class="card-title">Meine Listen</div>
         </ion-card>
+        </a>
       </ion-col>
 
-      <ion-col>
+      <ion-col >
+        <a (click)="pushToNewList()">
         <ion-card>
-          <img src="http://farm9.staticflickr.com/8155/6956457270_551e6e6357_b_d.jpg"/>
-          <div class="card-title">São Paulo</div>
-          <div class="card-subtitle">41 Listings</div>
+          <ion-icon class="iconSize" ios="ios-create" md="md-create"></ion-icon>
+          <div class="card-title">Neue Liste</div>
         </ion-card>
+        </a>
       </ion-col>
 
-      <ion-col>
-        <ion-card>
-          <img src="http://farm9.staticflickr.com/8155/6956457270_551e6e6357_b_d.jpg"/>
-          <div class="card-title">São Paulo</div>
-          <div class="card-subtitle">41 Listings</div>
-        </ion-card>
+
+    </ion-row>
+    <ion-row>
+
+      <ion-col class="margin">
+        <a (click)="pushToProfil()">
+          <ion-card >
+            <ion-icon class="iconSize" ios="ios-color-wand" md="md-color-wand"></ion-icon>
+            <div class="card-title">Mein Profil</div>
+          </ion-card>
+        </a>
       </ion-col>
 
+      <ion-col class="margin">
+        <a (click)="pushToLists()">
+          <ion-card>
+            <ion-icon class="iconSize" ios="ios-list" md="md-list"></ion-icon>
+            <div class="card-title">Meine Listen</div>
+          </ion-card>
+        </a>
+      </ion-col>
+
+      <ion-col >
+        <a (click)="pushToNewList()">
+          <ion-card>
+            <ion-icon class="iconSize" ios="ios-create" md="md-create"></ion-icon>
+            <div class="card-title">Neue Liste</div>
+          </ion-card>
+        </a>
+      </ion-col>
 
 
     </ion-row>
   </ion-grid>
-
 
 
 </ion-content>

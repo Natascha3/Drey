@@ -1,2 +1,23 @@
 page-home {
+
+  ion-col.margin{
+    margin-right: -10px;
+  }
+  .iconSize {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 50px;
+  }
+  .card-title{
+    text-align: center;
+  }
+  a{
+    color:black;
+  }
+  a:hover{
+    color: lightblue;
+  }
 }
+
